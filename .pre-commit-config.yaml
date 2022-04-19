@@ -1,9 +1,6 @@
-default_language_version:
-    python: python3.9
+# Based off of https://github.com/zricethezav/gitleaks
 repos:
-- repo: git://github.com/antonbabenko/pre-commit-terraform
-  rev: v1.48.0
-  hooks:
-    - id: terraform_fmt
-    - id: terraform_tflint
-    - id: terraform_docs
+  - repo: https://github.com/zricethezav/gitleaks
+    rev: v8.2.0
+    hooks:
+      - id: gitleaks
